@@ -55,7 +55,7 @@ public class ReceiptConsumers {
         } catch (JMSException | InterruptedException e) {
             e.printStackTrace();
         } finally {
-            // Clean up
+          
             try {
                 if (consumer != null) {
                     consumer.close();
