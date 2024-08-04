@@ -6,7 +6,7 @@ import javax.jms.*;
 
 public class ReceiptConsumers {
 
-    private static final String BROKER_URL = "tcp://localhost:61616"; // ActiveMQ broker URL
+    private static final String BROKER_URL = "tcp://localhost:61616";
     private static final String QUEUE_NAME = "ReceiptQueue"; // Name of the queue for receipts
 
     public static void main(String[] args) {
@@ -49,8 +49,8 @@ public class ReceiptConsumers {
                 }
             });
             
-            // Keep the consumer running
-            Thread.sleep(100000); // Adjust as needed or use a more sophisticated mechanism for long-running consumers
+          
+            Thread.sleep(100000); 
             
         } catch (JMSException | InterruptedException e) {
             e.printStackTrace();
